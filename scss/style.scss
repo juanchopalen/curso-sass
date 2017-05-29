@@ -1,8 +1,7 @@
-$text: #444;
-$font-family: "Helvetica", sans-serif;
-
 @import 'variables';
 @import 'layout';
+@import 'botones';
+
 
 body {
     color: $text;
@@ -31,9 +30,9 @@ p {
 }
 
 // Comentario
-
 blockquote {
     margin: 0 0 20px 0;
+    
     p {
         margin: 0;
     }
