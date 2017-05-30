@@ -1,4 +1,43 @@
-$text: #444;
-$font-family: "Helvetica", sans-serif;
-$title: #888;
-$title-font-family: "Georgia", serif;
+
+// Definición de variables
+// $nombre: valor;
+
+// Uso de variables
+p {
+    font-size: $fs;
+}
+
+/* Cadenas */
+
+@if($cadena == 'valor') {} // true
+@if($cadena) {} // true
+
+
+
+.cadena {
+    content: $cadena3;
+}
+
+/* Números */
+.numero {
+    margin-bottom: ($numero1 / $numero2);
+}
+
+// Interpolación 
+
+.interpolacion {
+    background-image: url('#{$image}');
+}
+
+/* Listas */
+
+@each $item in $lista {
+    .icon-#{$item} {
+        background-image: url('#{$item}.png');
+    }
+}
+
+/* Mapas */
+.mapa {
+    content: map-get($mapa, otra-clave);
+}

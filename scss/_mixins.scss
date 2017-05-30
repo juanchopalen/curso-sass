@@ -1,0 +1,21 @@
+@mixin box($radius: null, $bg: #f2f2f2, $space: 20px) {
+    padding: ($space / 2);
+    background-color: $bg;
+    @if unit($radius) != 'px' {
+        @warn "La unidad de medida debe ser en pixeles";
+        $radius: 1px * $radius;
+    }
+    border-radius: $radius;
+    margin-bottom: $space;
+    @if lightness($bg) < 50% {
+        color: #fff;
+    } @else {
+        color: $text;
+    }
+}
+
+@mixin mq-tablet {
+    @media (min-width: 680px) and (max-width: 1024px) {
+        @content;
+    }
+}

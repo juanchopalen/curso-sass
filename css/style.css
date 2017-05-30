@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .fsel {
   width: 99px;
   background-color: rgba(255, 255, 255, 0.3); }
@@ -121,6 +122,34 @@
 .pre11 {
   margin-left: 880px; }
 
+p {
+  font-size: 14px; }
+
+/* Cadenas */
+.cadena {
+  content: "Hola mundo!"; }
+
+/* N├║meros */
+.numero {
+  margin-bottom: 7%; }
+
+.interpolacion {
+  background-image: url("icon.png"); }
+
+/* Listas */
+.icon-facebook {
+  background-image: url("facebook.png"); }
+
+.icon-twitter {
+  background-image: url("twitter.png"); }
+
+.icon-linkedin {
+  background-image: url("linkedin.png"); }
+
+/* Mapas */
+.mapa {
+  content: "Otro valor"; }
+
 .container {
   margin: 0 auto;
   max-width: 680px;
@@ -131,7 +160,8 @@
   padding: 10px;
   background-color: #e6ebe0;
   border-radius: 5px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #444; }
   .box .head {
     border-bottom: 1px solid #9bc1bc;
     padding-bottom: 10px; }
@@ -141,6 +171,25 @@
   .box .cont {
     padding-top: 10px; }
 
+.box-grey {
+  padding: 25px;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  margin-bottom: 50px;
+  color: #444; }
+
+.selector {
+  padding: 20px; }
+  @media (min-width: 680px) and (max-width: 1024px) {
+    .selector {
+      padding: 10px; } }
+
+@media (min-width: 680px) and (max-width: 1024px) {
+  .selector {
+    padding: 20px; }
+
+  .selector2 {
+    padding: 10px; } }
 .btn {
   display: inline-block;
   padding: 10px 20px;
