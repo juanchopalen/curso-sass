@@ -1,0 +1,10 @@
+.sel {
+	width: 100px;
+	height: 100px;
+	position: relative;
+}
+
+.nuevo {
+	color: blue;
+	@extend .sel;
+}
