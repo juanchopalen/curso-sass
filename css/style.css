@@ -1,3 +1,10 @@
+.fsel {
+  width: 99px;
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.selector {
+  color: #004000; }
+
 .sel, .nuevo {
   width: 100px;
   height: 100px;
